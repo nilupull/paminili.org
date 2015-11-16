@@ -64,6 +64,7 @@
                 //if the complain is written down
                 if ($(this).attr('id') == "yeswrittenbtn") {
                     swapDivs("question3", "question4");
+                    post_data["questions"] ={};
                     post_data["questions"]["isComplainNoted"] = {};
                     post_data["questions"]["isComplainNoted"]["answer"] = value;
                     post_data["questions"]["isComplainNoted"]["score"] = score;
