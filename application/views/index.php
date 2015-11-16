@@ -9,12 +9,6 @@
         <link href="<?php echo base_url(); ?>assets/css/bootstrap.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>assets/css/custom-styles.css" rel="stylesheet">
 
-        <!--[if lt IE 9]>
-        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <!--    <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
-            <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
-            <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">-->
     </head>
 
     <!-- HTML code from Bootply.com editor -->

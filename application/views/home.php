@@ -27,7 +27,7 @@
                     </li>
                     <!-- /.dropdown -->
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <a href="<?php echo base_url() ?>statistics/">
                             View Statistics
                         </a>
                     </li>
@@ -86,7 +86,7 @@
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <br><br>
-                                                       
+
                                                         <br><br>
                                                     </div>
                                                 </div>
@@ -108,12 +108,10 @@
                                 <script type="text/javascript"
                                 src="<?php echo base_url() ?>assets/js/angular.min.js"></script>
                                 <script>
-                                    (function (i, s, o, g, r, a, m) {
-                                        i['GoogleAnalyticsObject'] = r;
-                                        i[r] = i[r] || function () {
+                                        (function(i, s, o, g, r, a, m) {                                         i['GoogleAnalyticsObject'] = r;
+                                        i[r] = i[r] || function() {
                                             (i[r].q = i[r].q || []).push(arguments)
-                                        }, i[r].l = 1 * new Date();
-                                        a = s.createElement(o),
+                                        }, i[r].l = 1 * new Date();                                         a = s.createElement(o),
                                                 m = s.getElementsByTagName(o)[0];
                                         a.async = 1;
                                         a.src = g;
@@ -129,13 +127,13 @@
                                     var options = {
                                         lng: lang,
                                         resGetPath: "<?php echo base_url() ?>assets/locales/" + lang + "/translation.json"
-                                    };
-                                    i18n.init(options, function (t) {
-                                        console.log(t);
-                                        $(".details").i18n();
-                                    });
-                                    //loadPoliceDevisions(null,lang);
-                                </script>
+                                            };
+                                            i18n.init(options, function(t) {
+                                                console.log(t);
+                                                $(".details").i18n();
+                                            });
+                                            //loadPoliceDevisions(null,lang);
+        </script>
                             </div>
                         </div>
                     </div>
@@ -161,15 +159,15 @@
         <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/i18next.js"></script>
 
         <script type="text/javascript">
-                                    var lang = localStorage.getItem('lan');
-                                    var options = {
-                                        lng: lang,
-                                        resGetPath: "<?php echo base_url() ?>/assets/locales/" + lang + "/translation.json"
-                                    };
-                                    i18n.init(options, function (t) {
-                                        console.log(t);
-                                        $(".details").i18n();
-                                    });
+            var lang = localStorage.getItem('lan');
+            var options = {
+                lng: lang,
+                resGetPath: "<?php echo base_url() ?>/assets/locales/" + lang + "/translation.json"
+                    };
+                    i18n.init(options, function(t) {
+                        console.log(t);
+                        $(".details").i18n();
+                    });
         </script>
     </body>
 </html>
